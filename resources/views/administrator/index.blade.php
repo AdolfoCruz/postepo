@@ -1,5 +1,5 @@
 @extends('index')
-@section('title','Pos | Tablero de control')
+@section('title','PosTepo | Tablero de control')
 @section('root')
 <div class="d-flex flex-column flex-root" id="app">
     <!--begin::Page-->
