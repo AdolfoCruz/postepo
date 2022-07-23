@@ -14,7 +14,7 @@ class Company extends Authenticatable
     use HasApiTokens, HasFactory, Notifiable, HasRoles;
 
 
-    protected $table = 'categories';
+    protected $table = 'company';
 
     /**
      * The attributes that are mass assignable.
@@ -22,9 +22,12 @@ class Company extends Authenticatable
      * @var array<int, string>
      */
     protected $fillable = [
-        'name',
-        'description',
-        'status'
+        'store_name',
+        'store_owner',
+        'store_address',
+        'store_email',
+        'store_phone',
+        'store_rfc'
     ];
 
     /**
@@ -46,7 +49,7 @@ class Company extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
 
-    public function scopeGetUsers($query,$filters){
+    public function scopeGetCompany($query,$filters){
         return $this->where(function($query) use ($filters){
             if(!is_null($filters->name) && $filters->name != ''){
                 $query->where('name','LIKE','%'.$filters->name.'%');
@@ -54,10 +57,10 @@ class Company extends Authenticatable
         })->get();
     }
 
-    public function scopeGetAllUsers($query){
+    public function scopeGetAllCompany($query){
         return $this->all();
     }
-    public function scopeGetUsersById($query,$id){
+    public function scopeGetCompanyById($query,$id){
         return $this->find($id);
     }
 

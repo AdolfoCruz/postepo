@@ -11,6 +11,7 @@ use App\Http\Resources\Category\CategoryResource;
 use App\Http\Resources\Category\CategoryCollection;
 use Illuminate\Validation\Rules;
 use Illuminate\Http\Request;
+use App\Models\Category;
 use Carbon\Carbon;
 use App\Models\User;
 use App\Models\Company;
@@ -18,6 +19,15 @@ use App\Models\Company;
 class CompanyController extends Controller
 {
     public function index(){
-        return view('company.index');
+        $data        = (object)[];
+        // $data->states = State::all();
+        $data->company = Company::all();
+        // $company = Company::all();
+        // $data->user  = Auth::user();
+        return view('company.index',compact('data'));
+        // return view( 'company.index')->with([
+        //     'company' => $company,
+        //     'data' => $data
+        // ]);
     }
 }

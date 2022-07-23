@@ -30,6 +30,44 @@ class CategoryController extends Controller
         ]);
 
     }
+
+    public function delete( $id ) {
+
+        try {
+            $category    = Category::find($id);
+            $deletedCategory     = Category::findOrFail($id)->delete();
+
+            if( $deletedCategory ) {
+                $title  = 'Eliminado';
+                $msj    = 'La categoria ha sido eliminado correctamente';
+                $type   = 'success';
+
+            } else {
+
+                $title  = 'Error';
+                $msj    = 'Ocurrio un error durante el proceso, contacte al equipo de sistemas o intentelo más tarde';
+                $type   = 'error';
+
+            }
+
+
+            return response()->json([
+                'title'     => $title,
+                'message'   => $msj,
+                'type'      => $type
+            ]);
+
+        } catch (\Throwable $th) {
+            return response()->json([
+                'title'     => 'Error',
+                'message'   => "Ocurrio un error: " . $th->getMessage(),
+                'type'      => 'error'
+            ]);
+        }
+
+    }
+
+
 }
 
 

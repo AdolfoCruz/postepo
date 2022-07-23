@@ -109,7 +109,7 @@
                         <!--begin:Menu item-->
                         <div class="menu-item">
                             <!--begin:Menu link-->
-                            <a class="menu-link" href="{{ route('index-categories') }}">
+                            <a class="menu-link" href="{{ route('categories.index') }}">
                                 <span class="menu-icon">
                                     <i class="bi bi-currency-exchange fs-3"></i>
                                 </span>
@@ -175,7 +175,7 @@
                                 <!--begin:Menu item-->
                                 <div class="menu-item">
                                     <!--begin:Menu link-->
-                                    <a class="menu-link" href="{{ route('index-categories') }}">
+                                    <a class="menu-link" href="{{ route('categories.index') }}">
                                         <span class="menu-bullet">
                                             <span class="bullet bullet-dot"></span>
                                         </span>
@@ -280,7 +280,7 @@
                         <!--begin:Menu item-->
                         <div class="menu-item">
                             <!--begin:Menu link-->
-                            <a class="menu-link" href="{{ route('index-categories') }}">
+                            <a class="menu-link" href="">
                                 <span class="menu-icon">
                                     <i class="bi bi-person-bounding-box fs-3"></i>
                                 </span>
@@ -292,7 +292,7 @@
                         <!--begin:Menu item-->
                         <div class="menu-item">
                             <!--begin:Menu link-->
-                            <a class="menu-link" href="{{ route('index-categories') }}">
+                            <a class="menu-link" href="">
                                 <span class="menu-icon">
                                     <i class="bi bi-person-heart fs-3"></i>
                                 </span>

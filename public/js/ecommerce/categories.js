@@ -69,6 +69,14 @@ var KTDatatablesButtons = function () {
                     orderable: false,
                     className: 'text-end',
                     render: function (data, type, row) {
+                        return '\
+                        <a href="#" class="btn btn-icon btn-light-danger pulse pulse-danger" data-kt-docs-table-filter="delete_row" title="Eliminar" data-category-id="${row.id}">\
+                                        <i class="bi bi-trash3-fill"></i>\
+                        </a>\
+                        <a href="' + HOST_URL + '/puestos/' + row.id + '/editar' +'"  class="btn btn-icon btn-light-warning pulse pulse-warning " title="Editar">\
+                            <i class="bi bi-pencil-fill"></i>\
+                        </a>\
+                    ';
                         return `
                             <a href="#" class="btn btn-light btn-active-light-primary btn-sm" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end" data-kt-menu-flip="top-end">
                                 Acciones
@@ -101,6 +109,7 @@ var KTDatatablesButtons = function () {
                             </div>
                             <!--end::Menu-->
                         `;
+
                     },
                 },
             ],
@@ -175,24 +184,6 @@ var KTDatatablesButtons = function () {
                     }
                 });
             })
-        });
-    }
-
-    var _downloadUsersData = function () {
-        $('#download_user_data').on('click', function (){
-            var name               = $('#kt_dataTable_search').val().toLowerCase(),
-                code               = $('#code_filter').val().toLowerCase(),
-                job                = $('#job_filter').val().toLowerCase(),
-                men                = $('#men').is(':checked'),
-                women              = $('#women').is(':checked'),
-                date_admission     = $('#date_admission').val(),
-                end_date_admission = $('#end_date_admission').val(),
-                active             = $('#active').is(':checked'),
-                inactive           = $('#inactive').is(':checked'),
-                branch_id          = JSON.stringify($('#branch').val()),
-                areas              = JSON.stringify($('#areas').val()),
-                params             = `?searchName=${name}&code=${code}&job=${job}&men=${men}&women=${women}&date_admission=${date_admission}&end_date_admission=${end_date_admission}&active=${active}&inactive=${inactive}&branch_id=${branch_id}&areas=${areas}`;
-            window.location.href = HOST_URL + '/get-excel-employees-data' + params;
         });
     }
 
