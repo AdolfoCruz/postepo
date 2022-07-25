@@ -1,5 +1,6 @@
+
 @extends('administrator.index')
-@section('title','Categorías | PosNix')
+@section('title','Usuarios | PosNix')
 @section('content')
 <!--begin::Toolbar-->
 <div class="toolbar py-2" id="kt_toolbar">
@@ -10,12 +11,12 @@
             <!--begin::Page title-->
             <div data-kt-swapper="true" data-kt-swapper-mode="prepend" data-kt-swapper-parent="{default: '#kt_content_container', 'lg': '#kt_toolbar_container'}" class="page-title d-flex align-items-center flex-wrap me-3 mb-5 mb-lg-0">
                 <!--begin::Title-->
-                <h1 class="d-flex align-items-center text-dark fw-bold my-1 fs-3">Categorias
+                <h1 class="d-flex align-items-center text-dark fw-bold my-1 fs-3">Usuarios
                 <!--begin::Separator-->
                 <span class="h-20px border-gray-200 border-start ms-3 mx-2"></span>
                 <!--end::Separator-->
                 <!--begin::Description-->
-                <small class="text-muted fs-7 fw-semibold my-1 ms-1">Categorias registrados en el sistema</small>
+                <small class="text-muted fs-7 fw-semibold my-1 ms-1">Usuarios registrados en el sistema</small>
                 <!--end::Description--></h1>
                 <!--end::Title-->
             </div>
@@ -27,7 +28,7 @@
             <div class="d-flex align-items-center">
                 <!--begin::Button-->
                 <a xhref="" class="btn btn-light-primary font-weight-bold btn-sm px-4 font-size-base ml-2">
-                    Añadir nueva categoria
+                    Añadir nuevo usuario
                     <!--begin::Svg Icon | path: icons/duotune/files/fil005.svg-->
                     <span class="svg-icon svg-icon-2x">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -47,7 +48,6 @@
     <!--end::Container-->
 </div>
 <!--end::Toolbar-->
-
 <div class="d-flex flex-column-fluid">
     <div class="container-fluid">
         <div class="card card-custom">
@@ -70,13 +70,15 @@
                     </div>
                 </div>
                 <!--begin::Datatable-->
-                <table id="categories_datatable" class="table align-middle table-row-dashed fs-6 gy-5">
+                <table id="users_datatable" class="table align-middle table-row-dashed fs-6 gy-5">
                     <thead>
                     <tr class="text-start text-gray-400 fw-bolder fs-7 text-uppercase gs-0">
                         <th>Id</th>
                         <th>Nombre</th>
-                        <th>Descripción</th>
+                        <th>Apellidos</th>
+                        <th>Correo electrónico</th>
                         <th>Status</th>
+                        <th>Fecha registro</th>
                         <th class="text-end min-w-100px">Acciones</th>
                     </tr>
                     </thead>
@@ -90,5 +92,5 @@
 </div>
 @endsection
 @push('scripts')
-    <script type="text/javascript" src="{{  URL::asset ('js/ecommerce/categories.js?v='.rand())  }}"></script>
+    <script type="text/javascript" src="{{  URL::asset ('js/user/users.js?v='.rand())  }}"></script>
 @endpush

@@ -1,4 +1,5 @@
 @extends('administrator.index')
+@section('title','Mi Negocio | PosNix')
 @section('content')
 <!--begin::Content-->
 <div class="content d-flex flex-column flex-column-fluid" id="kt_content">

@@ -28,3 +28,5 @@ require __DIR__.'/includes/general.php';
 require __DIR__.'/includes/category.php';
 
 require __DIR__.'/includes/company.php';
+
+require __DIR__.'/includes/user.php';

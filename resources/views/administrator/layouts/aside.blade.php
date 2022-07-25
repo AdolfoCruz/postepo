@@ -268,7 +268,7 @@
                         <!--begin:Menu item-->
                         <div class="menu-item">
                             <!--begin:Menu link-->
-                            <a class="menu-link" href="{{ route('dashboard') }}">
+                            <a class="menu-link" href="{{ route('index-user') }}">
                                 <span class="menu-icon">
                                     <i class="bi bi-people fs-3"></i>
                                 </span>
@@ -413,3 +413,5 @@
     <!--end::Footer-->
 </div>
 <!--end::Aside-->
+
+
