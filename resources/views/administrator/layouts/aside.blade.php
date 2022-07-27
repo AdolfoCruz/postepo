@@ -179,7 +179,7 @@
                                         <span class="menu-bullet">
                                             <span class="bullet bullet-dot"></span>
                                         </span>
-                                        <span class="menu-title">Categoria</span>
+                                        <span class="menu-title">Categorias</span>
                                     </a>
                                     <!--end:Menu link-->
                                 </div>
@@ -187,11 +187,11 @@
                                 <!--begin:Menu item-->
                                 <div class="menu-item">
                                     <!--begin:Menu link-->
-                                    <a class="menu-link" href="../../demo6/dist/apps/customers/list.html">
+                                    <a class="menu-link" href="{{ route('brands.index') }}">
                                         <span class="menu-bullet">
                                             <span class="bullet bullet-dot"></span>
                                         </span>
-                                        <span class="menu-title">Marca</span>
+                                        <span class="menu-title">Marcas</span>
                                     </a>
                                     <!--end:Menu link-->
                                 </div>

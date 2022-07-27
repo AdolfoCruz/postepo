@@ -9,12 +9,12 @@ use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 
-class Category extends Authenticatable
+class Brand extends Authenticatable
 {
     use HasApiTokens, HasFactory, Notifiable, HasRoles;
 
 
-    protected $table = 'categories';
+    protected $table = 'brands';
 
     /**
      * The attributes that are mass assignable.
