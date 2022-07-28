@@ -17,9 +17,21 @@ class UserSeeder extends Seeder
     {
         //BEGIN:: Create a superadmin
         $superadmin = User::create([
+            'name'      => 'Nixdit',
+            'last_name' => 'Innovación y Tecnología',
+            'email'     => 'superadmin@nixdit.com',
+            'password'  => Hash::make('Superadmin2022'),
+            'status'=>1
+        ]);
+        //END:: Create an superadmin
+
+        $superadmin->assignRole('superadmin');
+
+         //BEGIN:: Create a superadmin
+         $second_superadmin = User::create([
             'name'      => 'Adolfo',
             'last_name' => 'Cruz',
-            'email'     => 'superadmin@gmail.com',
+            'email'     => 'adolfo@nixdit.com',
             'password'  => Hash::make('Superadmin2022'),
             'status'=>1
         ]);
