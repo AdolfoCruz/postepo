@@ -97,7 +97,7 @@
                         <!--begin:Menu item-->
                         <div class="menu-item">
                             <!--begin:Menu link-->
-                            <a class="menu-link" href="">
+                            <a class="menu-link" href="{{ route('provider.index') }}">
                                 <span class="menu-icon">
                                     <i class="bi bi-person-lines-fill fs-3"></i>
                                 </span>
