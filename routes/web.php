@@ -25,10 +25,20 @@ require __DIR__.'/auth.php';
 
 require __DIR__.'/includes/general.php';
 
+require __DIR__.'/includes/purchases.php';
+
+require __DIR__.'/includes/inventory.php';
+
+require __DIR__.'/includes/orders.php';
+
 require __DIR__.'/includes/category.php';
+
+require __DIR__.'/includes/history.php';
 
 require __DIR__.'/includes/company.php';
 
 require __DIR__.'/includes/user.php';
 
 require __DIR__.'/includes/brand.php';
+
+

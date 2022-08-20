@@ -57,7 +57,7 @@
                                 </div>
                                 <div class="col-md-9">
                                     <!--begin::Input-->
-                                    <input type="text" class="form-control form-control-solid" name="store_name" value="" />
+                                    <input type="text" class="form-control form-control-solid" name="store_name" value="{{old('store_name')}}" />
                                     <!--end::Input-->
                                 </div>
                             </div>
@@ -74,7 +74,7 @@
                                 </div>
                                 <div class="col-md-9">
                                     <!--begin::Input-->
-                                    <input type="text" class="form-control form-control-solid" name="store_owner" value="" />
+                                    <input type="text" class="form-control form-control-solid" name="store_owner" value="{{old('store_owner')}}"/>
                                     <!--end::Input-->
                                 </div>
                             </div>
@@ -91,7 +91,7 @@
                                 </div>
                                 <div class="col-md-9">
                                     <!--begin::Input-->
-                                    <input type="text" class="form-control form-control-solid" name="store_address" value="" />
+                                    <input type="text" class="form-control form-control-solid" name="store_address" value="{{old('store_address')}}" />
                                     <!--end::Input-->
                                 </div>
                             </div>
@@ -107,7 +107,7 @@
                                 </div>
                                 <div class="col-md-9">
                                     <!--begin::Input-->
-                                    <input type="email" class="form-control form-control-solid" name="store_email" value="" />
+                                    <input type="email" class="form-control form-control-solid" name="store_email" value="{{old('store_email')}}" />
                                     <!--end::Input-->
                                 </div>
                             </div>
@@ -123,7 +123,7 @@
                                 </div>
                                 <div class="col-md-9">
                                     <!--begin::Input-->
-                                    <input type="text" class="form-control form-control-solid" name="store_phone" value="" />
+                                    <input type="text" class="form-control form-control-solid" name="store_phone" value="{{old('store_phone')}}" />
                                     <!--end::Input-->
                                 </div>
                             </div>
@@ -139,7 +139,7 @@
                                 </div>
                                 <div class="col-md-9">
                                     <!--begin::Input-->
-                                    <input style="text-transform:uppercase;" type="text" class="form-control form-control-solid" name="store_rfc" value="" />
+                                    <input style="text-transform:uppercase;" type="text" class="form-control form-control-solid" name="store_rfc" value="{{old('store_rfc')}}"/>
                                     <!--end::Input-->
                                 </div>
                             </div>
