@@ -73,7 +73,7 @@
                         <!--begin:Menu item-->
                         <div class="menu-item">
                             <!--begin:Menu link-->
-                            <a class="menu-link" href="{{ route('dashboard') }}">
+                            <a class="menu-link" href="{{ route('purchases.index') }}">
                                 <span class="menu-icon">
                                     <i class="fonticon-app-store fs-3"></i>
                                 </span>
@@ -85,7 +85,19 @@
                         <!--begin:Menu item-->
                         <div class="menu-item">
                             <!--begin:Menu link-->
-                            <a class="menu-link" href="{{ route('dashboard') }}">
+                            <a class="menu-link" href="{{ route('inventory.index') }}">
+                                <span class="menu-icon">
+                                    <i class="fonticon-app-store fs-3"></i>
+                                </span>
+                                <span class="menu-title">Inventario</span>
+                            <!--end:Menu link-->
+                            </a>
+                        </div>
+                        <!--end:Menu item-->
+                        <!--begin:Menu item-->
+                        <div class="menu-item">
+                            <!--begin:Menu link-->
+                            <a class="menu-link" href="{{ route('orders.index') }}">
                                 <span class="menu-icon">
                                     <i class="fonticon-app-store fs-3"></i>
                                 </span>
@@ -109,7 +121,7 @@
                         <!--begin:Menu item-->
                         <div class="menu-item">
                             <!--begin:Menu link-->
-                            <a class="menu-link" href="{{ route('categories.index') }}">
+                            <a class="menu-link" href="{{ route('history.index') }}">
                                 <span class="menu-icon">
                                     <i class="bi bi-currency-exchange fs-3"></i>
                                 </span>
