@@ -20,7 +20,8 @@ class DatabaseSeeder extends Seeder
             CategorySeeder::class,
             CompanySeeder::class,
             BrandSeeder::class,
-            UnitMeasurementSeeder::class
+            ProviderSeeder::class,
+            UnitMeasureSeeder::class
         ]);
     }
 }
