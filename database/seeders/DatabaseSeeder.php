@@ -21,7 +21,8 @@ class DatabaseSeeder extends Seeder
             CompanySeeder::class,
             BrandSeeder::class,
             ProviderSeeder::class,
-            UnitMeasureSeeder::class
+            UnitMeasureSeeder::class,
+            UnitMeasurementSeeder::class 
         ]);
     }
 }
