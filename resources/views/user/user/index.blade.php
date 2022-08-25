@@ -70,7 +70,7 @@
                     </div>
                 </div>
                 <!--begin::Datatable-->
-                <table id="users_datatable" class="table align-middle table-row-dashed fs-6 gy-5">
+                <table id="users_datatable" class="table align-middle table-row-dashed fs-6 gy-3">
                     <thead>
                     <tr class="text-start text-gray-400 fw-bolder fs-7 text-uppercase gs-0">
                         <th>Id</th>

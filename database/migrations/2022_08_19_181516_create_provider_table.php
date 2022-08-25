@@ -15,13 +15,11 @@ return new class extends Migration
     {
         Schema::create('provider', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
-            $table->string('last_name');
-            $table->string('email');
+            $table->unsignedBigInteger('user_id')->index();
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
             $table->string('phone');
             $table->string('rfc');
             $table->string('adress');
-            $table->tinyInteger('status')->default(1);
             $table->timestamps();
         });
     }

@@ -1,6 +1,7 @@
 @extends('administrator.index')
 @section('title','Unidad de medida | PosNix')
 @section('content')
+
 <!--begin::Toolbar-->
 <div class="toolbar py-2" id="kt_toolbar">
     <!--begin::Container-->
@@ -10,15 +11,24 @@
             <!--begin::Page title-->
             <div data-kt-swapper="true" data-kt-swapper-mode="prepend" data-kt-swapper-parent="{default: '#kt_content_container', 'lg': '#kt_toolbar_container'}" class="page-title d-flex align-items-center flex-wrap me-3 mb-5 mb-lg-0">
                 <!--begin::Title-->
-                <h1 class="d-flex align-items-center text-dark fw-bold my-1 fs-3">Hola soy vista Unidad de medida
-                    <!--end::Title-->
+                <h1 class="d-flex align-items-center text-dark fw-bold my-1 fs-3">Unidad de medida
+                <!--begin::Separator-->
+                <span class="h-20px border-gray-200 border-start ms-3 mx-2"></span>
+                <!--end::Separator-->
+                <!--begin::Description-->
+                <small class="text-muted fs-7 fw-semibold my-1 ms-1">Unidades de medida registrados en el sistema</small>
+                <!--end::Description--></h1>
+                <!--end::Title-->
             </div>
             <!--end::Page title-->
         </div>
-         <!--end::Page title-->
+        <!--end::Page title-->
         <!--begin::Action group-->
         <div class="d-flex align-items-center flex-wrap">
             <div class="d-flex align-items-center">
+                <!--begin::Button-->
+                <a xhref="" class="btn btn-light-primary font-weight-bold btn-sm px-4 font-size-base ml-2">
+                    Añadir nueva categoria
                     <!--begin::Svg Icon | path: icons/duotune/files/fil005.svg-->
                     <span class="svg-icon svg-icon-2x">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -38,31 +48,6 @@
     <!--end::Container-->
 </div>
 <!--end::Toolbar-->
-<div class="d-flex flex-column-fluid">
-    <div class="container-fluid">
-        <div class="card card-custom">
-            {{-- <div class="card-header flex-wrap border-0 pt-6 pb-0">
-                <div class="card-title">
-                    <h3 class="card-label">Unidad de Medidas
-                    <span class="d-block text-muted pt-2 font-size-sm">Lista de Unidad de medidad registrados en el sistema</span></h3>
-                </div>
-            </div> --}}
 
-            <div class="card-body">
-                <!--begin::Datatable-->
-                <table id="unitmeasure_datatable" class="table align-middle table-row-dashed fs-2 gy-5">
-                    <thead>
-                    <tr class="text-start text-gray-400 fw-bolder fs-7 text-uppercase gs-0">
-                        <th>Id</th>
-                        <th>Name</th>
-                    </tr>
-                </thead>
-                <tbody class="text-gray-600 fw-bold">
-                </tbody>
-            </table>
-            <!--end::Datatable-->
-        </div>
-    </div>
-</div>
-</div>
+<h1>Hola soy vista Unidad de medida</h1>
 @endsection
