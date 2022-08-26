@@ -34,7 +34,7 @@ License: For each use you must have a valid license purchased only from above li
         {{-- <link href="{{ asset('css/styles.css?v='.rand()) }}" rel="stylesheet" type="text/css" /> --}}
 		<!--end::Global Stylesheets Bundle-->
         <!--begin::Page bg image-->
-        <style>body { background-image: url('metronic/assets/media/auth/bg6.jpg'); } [data-theme="dark"] body { background-image: url('metronic/assets/media/auth/bg4-dark.jpg'); }</style>
+        <style>body { background-image: url('metronic/assets/media/auth/bg8.jpg'); } [data-theme="dark"] body { background-image: url('metronic/assets/media/auth/bg9-dark.jpg'); }</style>
         <!--end::Page bg image-->
 	</head>
 	<!--end::Head-->

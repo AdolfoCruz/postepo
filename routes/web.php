@@ -40,3 +40,7 @@ require __DIR__.'/includes/company.php';
 require __DIR__.'/includes/user.php';
 
 require __DIR__.'/includes/brand.php';
+<<<<<<< HEAD
+=======
+
+require __DIR__.'/includes/provider.php';

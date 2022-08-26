@@ -22,13 +22,7 @@ class BrandController extends Controller
     }
 
     public function getBrand() {
-
-        $brands = new BrandCollection( Brand::all() );
-
-        return response()->json([
-            'data' => $brands
-        ]);
-
+        return Brand::get();
     }
 
 

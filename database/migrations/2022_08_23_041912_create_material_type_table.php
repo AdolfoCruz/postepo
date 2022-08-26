@@ -13,13 +13,9 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('provider', function (Blueprint $table) {
-            $table->id();
-            $table->unsignedBigInteger('user_id')->index();
-            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
-            $table->string('phone');
-            $table->string('rfc');
-            $table->string('adress');
+        Schema::create('material_type', function (Blueprint $table) {
+            $table->id('id');
+            $table->string('name');
             $table->timestamps();
         });
     }
@@ -31,6 +27,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('provider');
+        Schema::dropIfExists('material_type');
     }
 };
