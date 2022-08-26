@@ -109,7 +109,7 @@
                         <!--begin:Menu item-->
                         <div class="menu-item">
                             <!--begin:Menu link-->
-                            <a class="menu-link" href="{{ route('categories.index') }}">
+                            <a class="menu-link" href="">
                                 <span class="menu-icon">
                                     <i class="bi bi-person-lines-fill fs-3"></i>
                                 </span>
