@@ -48,47 +48,8 @@
 </div>
 <!--end::Toolbar-->
 
-<div class="d-flex flex-column-fluid">
-    <div class="container-fluid">
-        <div class="card card-custom">
-            {{-- <div class="card-header flex-wrap border-0 pt-6 pb-0">
-                <div class="card-title">
-                    <h3 class="card-label">Categorias
-                    <span class="d-block text-muted pt-2 font-size-sm">Lista de categorias registrados en el sistema</span></h3>
-                </div>
-            </div> --}}
+<h1>Vista Categorias</h1>
 
-            <div class="card-body">
-                <div class="p-5">
-                    <div class="col-md-4 my-2 my-md-0">
-                        <div class="input-icon">
-                            <input type="text" class="form-control" placeholder="Buscar producto por nombre..." id="kt_dataTable_search" data-kt-docs-table-filter="search" />
-                            <span>
-                                <i class="flaticon2-search-1 text-muted"></i>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-                <!--begin::Datatable-->
-                <table id="categories_datatable" class="table align-middle table-row-dashed fs-6 gy-5">
-                    <thead>
-                    <tr class="text-start text-gray-400 fw-bolder fs-7 text-uppercase gs-0">
-                        <th>Id</th>
-                        <th>Nombre</th>
-                        <th>Descripción</th>
-                        <th>Status</th>
-                        <th class="text-end min-w-100px">Acciones</th>
-                    </tr>
-                    </thead>
-                    <tbody class="text-gray-600 fw-bold">
-                    </tbody>
-                </table>
-                <!--end::Datatable-->
-            </div>
-        </div>
-    </div>
-</div>
+
 @endsection
-@push('scripts')
-    <script type="text/javascript" src="{{  URL::asset ('js/ecommerce/categories.js?v='.rand())  }}"></script>
-@endpush
+

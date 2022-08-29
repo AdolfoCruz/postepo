@@ -70,18 +70,20 @@
                     </div>
                 </div>
                 <!--begin::Datatable-->
-                <table id="brands_datatable" class="table align-middle table-row-dashed fs-6 gy-5">
-                    <thead>
-                    <tr class="text-start text-gray-400 fw-bolder fs-7 text-uppercase gs-0">
-                        <th>N°</th>
-                        <th>Nombre</th>
-                        <th>Descripción</th>
-                        <th>Status</th>
-                        <th class="text-end min-w-100px">Acciones</th>
-                    </tr>
-                    </thead>
-                    <tbody class="text-gray-600 fw-bold">
-                    </tbody>
+                <table class="table align-middle table-row-dashed fs-6 gy-3 ajax_datatable">
+                    {{-- <table id="kt_datatable_horizontal_scroll" class="table align-middle table-striped table-row-bordered gy-3 gs-7 ajax_datatable"> --}}
+                        <thead>
+                        {{-- <tr class="text-start text-gray-400 fw-bolder fs-7 text-uppercase gs-0"> --}}
+                        <tr class="text-start text-dark fw-bolder fs-7 text-uppercase gs-0">
+                            <th>N°</th>
+                            <th class="min-w-100px">Nombre</th>
+                            <th>Descripción</th>
+                            <th>Status</th>
+                            <th class="text-center min-w-100px">Acciones</th>
+                        </tr>
+                        </thead>
+                        <tbody xclass="text-gray-600 fw-bold">
+                        </tbody>
                 </table>
                 <!--end::Datatable-->
             </div>
@@ -90,5 +92,5 @@
 </div>
 @endsection
 @push('scripts')
-    <script type="text/javascript" src="{{  URL::asset ('js/ecommerce/brands.js?v='.rand())  }}"></script>
+    <script type="text/javascript" src="{{  URL::asset ('js/ecommerce/warehouse/catalog/brands.js?v='.rand())  }}"></script>
 @endpush
