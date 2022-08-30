@@ -14,7 +14,7 @@ class UmeasureController extends Controller
      */
     public function um()
     {
-        return view('ecommerce.unitmeasure.index');
+        return view('ecommerce.umeasure.index');
     }
 
     /**

@@ -22,7 +22,7 @@ class CategoryController extends Controller
     }
 
     public function getCategory() {
-
+        return Category::get();
         $categories = new CategoryCollection( Category::all() );
 
         return response()->json([
