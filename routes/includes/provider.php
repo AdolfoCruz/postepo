@@ -6,6 +6,8 @@ use App\Http\Controllers\Ecommerce\ProviderController;
 Route::group(['middleware' => ['role:superadmin']], function () {
     //
     Route::get('/providers',[ProviderController::class,'index'])->middleware(['auth'])->name('provider.index');
+    Route::get('/providers/get-all',[ProviderController::class,'getProvider'])->middleware(['auth'])->name('providers.get');
+    //Route::get('/providers/get-all',[ProviderController::class, 'getProvider'])->middleware(['auth'])->name('providers.get');
     /* Route::get('/category/get-all', [CategoryController::class, 'getCategory'])->middleware(['auth'])->name('products.get');
     Route::get('/category/delete/{id}', [CategoryController::class, 'delete'])->middleware(['auth'])->name('products.delete'); //TO: DELETE
     Route::get('/category/editar/{id}', [CategoryControllerroller::class, 'edit'])->middleware(['auth'])->name('products.edit'); //TO: EDIT */
