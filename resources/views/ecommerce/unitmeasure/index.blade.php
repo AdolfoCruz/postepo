@@ -16,7 +16,7 @@
                 <span class="h-20px border-gray-200 border-start ms-3 mx-2"></span>
                 <!--end::Separator-->
                 <!--begin::Description-->
-                <small class="text-muted fs-7 fw-semibold my-1 ms-1">Unidades de medida registrados en el sistema</small>
+                <small class="text-muted fs-7 fw-semibold my-1 ms-1">Unidades de medida registradas en el sistema</small>
                 <!--end::Description--></h1>
                 <!--end::Title-->
             </div>
@@ -49,5 +49,47 @@
 </div>
 <!--end::Toolbar-->
 
-<h1>Hola soy vista Unidad de medida</h1>
+<div class="d-flex flex-column-fluid">
+    <div class="container-fluid">
+        <div class="card card-custom">
+            {{-- <div class="card-header flex-wrap border-0 pt-6 pb-0">
+                <div class="card-title">
+                    <h3 class="card-label">Unidad de medidas
+                    <span class="d-block text-muted pt-2 font-size-sm">Lista de unidades de medidas registrados en el sistema</span></h3>
+                </div>
+            </div> --}}
+
+            <div class="card-body">
+                <div class="p-5">
+                    <div class="col-md-4 my-2 my-md-0">
+                        <div class="input-icon">
+                            <input type="text" class="form-control" placeholder="Buscar tipo de medida..." id="kt_dataTable_search" data-kt-docs-table-filter="search" />
+                            <span>
+                                <i class="flaticon2-search-1 text-muted"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <!--begin::Datatable-->
+                <table class="table align-middle table-row-dashed fs-6 gy-3 ajax_datatable">
+                    {{-- <table id="kt_datatable_horizontal_scroll" class="table align-middle table-striped table-row-bordered gy-3 gs-7 ajax_datatable"> --}}
+                        <thead>
+                        {{-- <tr class="text-start text-gray-400 fw-bolder fs-7 text-uppercase gs-0"> --}}
+                        <tr class="text-start text-dark fw-bolder fs-7 text-uppercase gs-0">
+                            <th>N°</th>
+                            <th class="min-w-100px">Nombre</th>
+                            <th class="text-center min-w-100px">Acciones</th>
+                        </tr>
+                        </thead>
+                        <tbody xclass="text-gray-600 fw-bold">
+                        </tbody>
+                </table>
+                <!--end::Datatable-->
+            </div>
+        </div>
+    </div>
+</div>
 @endsection
+@push('scripts')
+    <script type="text/javascript" src="{{  URL::asset ('js/ecommerce/warehouse/catalog/umeasure.js?v='.rand())  }}"></script>
+@endpush
